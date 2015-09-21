@@ -23,7 +23,7 @@
 		</tr>
 					</table>
 				<br>
-				<p><button class="btn btn-default" type="submit">Update Cart</button> 
+				<p><button class="btn btn-default" type="submit">Update Cart</button>
 				<a class="btn btn-default" href="cart">Go To Cart</a></p>
 			</form>
 		</div>
@@ -42,7 +42,7 @@
 
 				</ul>
 			</div>
-			
+
 			<div class="panel panel-default panel-list">
 				<div class="panel-heading">
 					 <h3 class="panel-title">
@@ -52,10 +52,10 @@
 				<!-- List group -->
 				<ul class="list-group">
 
-				<?php foreach (get_popular_h() as $popular) : ?> 
+				<?php foreach (get_popular_h() as $popular) : ?>
 
 					<li class="list-group-item"><a href="<?php echo base_url(); ?>products/details/<?php echo $popular->id; ?>"><?php echo $popular->title; ?></a></li>
 
 				<?php endforeach; ?>
-					
+
 				</ul>

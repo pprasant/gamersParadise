@@ -10,7 +10,7 @@
 							<div class="details-description">
 								<?php echo $product->description; ?>
 							</div>
-							
+
 							<div class="details-buy">
 								<form method="post" action="<?php echo base_url(); ?>cart/add/<?php echo $product->id; ?>">
 						QTY: <input class="qty" type="text" name="qty" value="1" />

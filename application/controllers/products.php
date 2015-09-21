@@ -11,7 +11,7 @@ class Products extends CI_Controller{
 
 
 		// load view
-		
+
 		$data['main_content'] = "products";
 
 
@@ -27,11 +27,29 @@ class Products extends CI_Controller{
 
 
 		// load view
-		
+
 		$data['main_content'] = "details";
 
 
 		$this->load->view('layouts/main', $data);
 
 	}
+
+
+	public function category($id){
+
+		// get product detail
+
+		$data['products'] = $this->Product_model->get_products_with_category($id);
+
+		
+		// load view
+
+		$data['main_content'] = "selectedproducts";
+
+
+		$this->load->view('layouts/main', $data);
+
+	}
+
 }

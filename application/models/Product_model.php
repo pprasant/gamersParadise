@@ -25,6 +25,20 @@ class Product_model extends CI_Model{
 
 	}
 
+	public function get_products_with_category($id){
+
+
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->where('category_id', $id);
+
+		$query = $this->db->get();
+		return $query->result();
+
+	}
+
+
+
 	public function get_categories(){
 
 		$this->db->select('*');
